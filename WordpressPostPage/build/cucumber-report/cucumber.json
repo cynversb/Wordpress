@@ -1,0 +1,629 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-23T09:56:25.674Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7702655900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11345303900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6940565300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7115275900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.Login()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Seleccionar el post y dar clic en la opcion \u0027Edit\u0027 del combo para editar el post-",
+        "description": "",
+        "id": "edit-post;seleccionar-el-post-y-dar-clic-en-la-opcion--edit--del-combo-para-editar-el-post-",
+        "after": [
+          {
+            "result": {
+              "duration": 62832600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 217416900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 70374600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 149341200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 73802400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Me encuentro en la pagina Post y selecciono un post",
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.selectPostFromTable()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116689700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Doy clic en la opcion Edit del combo",
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.post_selectActionEdit_ComboboxBottom()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80781800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Se da clic en Apply y muestra la pantalla BULK EDIT",
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.post_selectButonApplyBottom()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 475399600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Se edita las opciones Author,Comments,Pings y Status del post",
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.post_edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 548143400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Se da clic en el boton Update y el post es actualizado.",
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.post_selectButonUpdateEdit()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EditPost"
+          },
+          {
+            "name": "@ButtonEditPost"
+          }
+        ]
+      }
+    ],
+    "name": "Edit post",
+    "description": "  Realizar una edicion del post selecionando un post, selecionando opcion \u0027Edit\u0027 del combobox y dar clic en el boton \u0027Apply\u0027",
+    "id": "edit-post",
+    "keyword": "Feature",
+    "uri": "file:feature/Post_modulo/EditPost.feature",
+    "tags": [
+      {
+        "name": "@EditPost",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-23T09:57:00.702Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7016790800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11250636000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7035793700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7391832100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.Login()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El boton \u0027Publish\u0027 permite publicar el Post en la Web",
+        "description": "",
+        "id": "publishpost;el-boton--publish--permite-publicar-el-post-en-la-web",
+        "after": [
+          {
+            "result": {
+              "duration": 68816600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 134640300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 58847100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 110407500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSI\u0027, ip: \u0027192.168.0.20\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Cynthia\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: f7a7baa13313f60b8337af9432d594a1\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat stepDefinition.Post.Step_PublishPost.postHomePage(Step_PublishPost.java:50)\r\n\tat ✽.Me encuentro en la pagina \u0027Add Post\u0027con link(file:///D:/Cursos/Proyectos/Eclipse%20Projects/WordpressPostPage/feature/Post_modulo/PublishPost.feature:7)\r\n",
+              "duration": 69811100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Me encuentro en la pagina \u0027Add Post\u0027con link",
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.postHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Se agrega titulo y Se da click en el boton \u0027Publish\u0027",
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.AddTitleAndclickOnButtonAddPublish()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Se publica el Post en la Web",
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.publishPost()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PublishPost"
+          },
+          {
+            "name": "@ButtonPublishWorks"
+          }
+        ]
+      }
+    ],
+    "name": "PublishPost",
+    "description": "",
+    "id": "publishpost",
+    "keyword": "Feature",
+    "uri": "file:feature/Post_modulo/PublishPost.feature",
+    "tags": [
+      {
+        "name": "@PublishPost",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-23T09:57:33.903Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7005106600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11624513100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7079799400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6944601800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.Login()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "select a post and remove that post",
+        "description": "",
+        "id": "removepost;select-a-post-and-remove-that-post",
+        "after": [
+          {
+            "result": {
+              "duration": 46873600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 83775500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 76785700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 96943200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10052124200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Me encuentro en la pagina principal de Post y selecciono un Post",
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.selectPostFromTable()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10093089300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Se da clic en el combobox \u0027Move to Trash\u0027",
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.post_selectActionTrash_ComboboxBottom()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 447640800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Se elimina el Post seleccionado",
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.post_selectButonApplyBottom()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RemovePost"
+          },
+          {
+            "name": "@ComboboxMovetoTrash"
+          }
+        ]
+      }
+    ],
+    "name": "RemovePost",
+    "description": "  I want to use this template for my feature file",
+    "id": "removepost",
+    "keyword": "Feature",
+    "uri": "file:feature/Post_modulo/RemovePost.feature",
+    "tags": [
+      {
+        "name": "@RemovePost",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-23T09:58:27.483Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7087533600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11265769000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7272924600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.Login()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7622255400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.Login()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "El boton \u0027Search\u0027 permite buscar un post y la tabla muestra los post derivados de la palabra buscada.",
+        "description": "",
+        "id": "searchpost;el-boton--search--permite-buscar-un-post-y-la-tabla-muestra-los-post-derivados-de-la-palabra-buscada.",
+        "after": [
+          {
+            "result": {
+              "duration": 51859600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 81789100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_RemovePost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 141025500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_PublishPost.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 99732400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Post.Step_EditarPost.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 280249700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Me encuentro en la pantalla Post",
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.postHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114696000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Escribo en el textbox la palabra \u0027h\u0027",
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.post_writeTextSearched()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 352059700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Da click en el boton \u0027Search Post\u0027 y la tabla muestra los post buscados",
+            "match": {
+              "location": "stepDefinition.Post.Step_SearchPost.post_selectButtonSearchPost()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchPost"
+          },
+          {
+            "name": "@ButtonSearchPost"
+          }
+        ]
+      }
+    ],
+    "name": "SearchPost",
+    "description": "  Deseo buscar un post en la tabla.",
+    "id": "searchpost",
+    "keyword": "Feature",
+    "uri": "file:feature/Post_modulo/SearchPost.feature",
+    "tags": [
+      {
+        "name": "@SearchPost",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

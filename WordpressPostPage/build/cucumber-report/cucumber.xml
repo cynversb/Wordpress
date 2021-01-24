@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="156.462">
+    <testcase classname="Edit post" name="Seleccionar el post y dar clic en la opcion 'Edit' del combo para editar el post-" time="34.987">
+        <system-out><![CDATA[Given Me encuentro en la pagina Post y selecciono un post...................passed
+And Doy clic en la opcion Edit del combo....................................passed
+When Se da clic en Apply y muestra la pantalla BULK EDIT....................passed
+And Se edita las opciones Author,Comments,Pings y Status del post...........passed
+Then Se da clic en el boton Update y el post es actualizado.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PublishPost" name="El boton 'Publish' permite publicar el Post en la Web" time="33.153">
+        <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.141)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Cynthia\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: f7a7baa13313f60b8337af9432d594a1" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given Me encuentro en la pagina 'Add Post'con link..........................failed
+When Se agrega titulo y Se da click en el boton 'Publish'...................skipped
+Then Se publica el Post en la Web...........................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Cynthia\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f7a7baa13313f60b8337af9432d594a1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at stepDefinition.Post.Step_PublishPost.postHomePage(Step_PublishPost.java:50)
+	at ✽.Me encuentro en la pagina 'Add Post'con link(file:///D:/Cursos/Proyectos/Eclipse%20Projects/WordpressPostPage/feature/Post_modulo/PublishPost.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="RemovePost" name="select a post and remove that post" time="53.559">
+        <system-out><![CDATA[Given Me encuentro en la pagina principal de Post y selecciono un Post......passed
+When Se da clic en el combobox 'Move to Trash'..............................passed
+Then Se elimina el Post seleccionado........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SearchPost" name="El boton 'Search' permite buscar un post y la tabla muestra los post derivados de la palabra buscada." time="34.38">
+        <system-out><![CDATA[Given Me encuentro en la pantalla Post......................................passed
+When Escribo en el textbox la palabra 'h'...................................passed
+Then Da click en el boton 'Search Post' y la tabla muestra los post buscados.passed
+]]></system-out>
+    </testcase>
+</testsuite>
